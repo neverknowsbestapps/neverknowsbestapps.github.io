@@ -1,64 +1,111 @@
 <!DOCTYPE html>
+<!-- tools/build.mjs が apps/*.json から作るファイル。直接直さない -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repistry | neverknowsbestapps</title>
-<link rel="stylesheet" href="../../assets/style.css">
+<title>Repistry | Log your workout weight and reps fast</title>
+<meta name="description" content="A simple workout log: pick an exercise, enter weight and reps. See your previous sets while you log, and track personal bests and progress per exercise.">
+<link rel="canonical" href="https://neverknowsbestapps.github.io/repistry/en/">
+<link rel="alternate" hreflang="en" href="https://neverknowsbestapps.github.io/repistry/en/">
+<link rel="alternate" hreflang="ja" href="https://neverknowsbestapps.github.io/repistry/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Repistry | Log your workout weight and reps fast">
+<meta property="og:description" content="A simple workout log: pick an exercise, enter weight and reps. See your previous sets while you log, and track personal bests and progress per exercise.">
+<meta property="og:url" content="https://neverknowsbestapps.github.io/repistry/en/">
+<meta property="og:image" content="https://neverknowsbestapps.github.io/assets/apps/repistry/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Repistry","description":"A simple workout log: pick an exercise, enter weight and reps. See your previous sets while you log, and track personal bests and progress per exercise.","url":"https://neverknowsbestapps.github.io/repistry/en/","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","image":"https://neverknowsbestapps.github.io/assets/apps/repistry/icon.png","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"neverknowsbestapps"}}</script>
 </head>
-<body>
-<div class="wrap">
+<body class="app-page" style="--bg:#e04e04;--bg2:#c04403;--name:#ffffff;--tag:#fff1e6;--em:#ffffff;--mark:#ffd0b3;--accent:#c04403">
 
-  <nav class="crumb">
-    <a href="../../">neverknowsbestapps</a>
-    <a class="lang" href="../">日本語</a>
-  </nav>
-
-  <header class="hero">
-    <img class="icon" src="../../assets/img/repistry-icon.png" alt="">
-    <h1>Repistry</h1>
-    <p class="tagline">A straightforward workout log for weight and reps.</p>
-    <div class="stores">
-      <a class="store" href="https://apps.apple.com/jp/app/id6806288076"><img class="apple" src="../../assets/badge/appstore-en.svg" alt="Download on the App Store"></a>
-      <a class="store" href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"><img class="google" src="../../assets/badge/googleplay-en.png" alt="Get it on Google Play"></a>
+<header class="hero">
+  <div class="wrap">
+    <nav class="top-nav"><a href="/">neverknowsbestapps</a><a class="lang" href="/repistry/">日本語</a></nav>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="brand"><img src="/assets/apps/repistry/icon.png" alt=""><span class="name">Repistry</span></div>
+        <div class="rule"></div>
+        <h1 class="catch">Your workouts,<br>simply logged.</h1>
+        <div class="stores"><a href="https://apps.apple.com/app/id6806288076"><img class="apple" src="/assets/badge/appstore-en.svg" alt="Download on the App Store"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry&amp;hl=en"><img class="google" src="/assets/badge/googleplay-en.png" alt="Get it on Google Play"></a></div>
+      </div>
+      <div class="hero-phone phone"><img src="/assets/apps/repistry/en-record.jpg" alt="Logging a set"></div>
     </div>
-  </header>
-
-  <div class="rail">
-    <figure><img src="../../assets/img/repistry-en-1.png" alt=""><figcaption>Log a set</figcaption></figure>
-    <figure><img src="../../assets/img/repistry-en-2.png" alt=""><figcaption>Home</figcaption></figure>
-    <figure><img src="../../assets/img/repistry-en-3.png" alt=""><figcaption>History</figcaption></figure>
-    <figure><img src="../../assets/img/repistry-en-4.png" alt=""><figcaption>Analysis</figcaption></figure>
   </div>
+</header>
 
-  <h2>Features</h2>
-  <ul class="feat">
-    <li>Choose an exercise, then enter weight and reps</li>
-    <li>See your previous sets while you log the current one</li>
-    <li>Get a marker when you set a new personal best</li>
-    <li>Set a rest duration for each exercise and time it</li>
-    <li>Review on the calendar and edit past sets from the history</li>
-    <li>Check sessions, sets, total volume, and progress per exercise</li>
-  </ul>
 
-  <h2>App details</h2>
-  <dl class="spec">
-    <div class="row"><dt>Price</dt><dd>Free</dd></div>
-    <div class="row"><dt>Ads</dt><dd>None</dd></div>
-    <div class="row"><dt>In-app purchases</dt><dd>None</dd></div>
-    <div class="row"><dt>Platforms</dt><dd>iPhone / Android</dd></div>
-    <div class="row"><dt>Age rating</dt><dd>4+</dd></div>
-    <div class="row"><dt>Data</dt><dd>Stored on your device</dd></div>
-    <div class="row"><dt>Languages</dt><dd>English / 日本語</dd></div>
-    <div class="row"><dt>Version</dt><dd>1.0.0</dd></div>
-  </dl>
 
-  <footer class="foot">
-    <p><a href="../../repistry-privacy/#en">Privacy policy</a></p>
+<section class="feats">
+  <div class="wrap">
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/en-home.jpg" alt="Training days, color-coded by muscle" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>Training days,<br><span class="mark">color-coded</span> by muscle</h3>
+        <p>See at a glance when you trained and what.</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/en-history.jpg" alt="Fix any past set, any time" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>Fix any past set,<br><span class="mark">any time</span></h3>
+        <p>Edit earlier sets from the history.</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/en-analysis.jpg" alt="See your progress by exercise" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>See your <span class="mark">progress</span><br>by exercise</h3>
+        <p>Check sessions, sets, total volume, and progress per exercise.</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/en-settings.jpg" alt="No account needed. Works offline." loading="lazy"></div>
+      <div class="feat-text">
+        <h3>No account needed.<br><span class="mark">Works offline.</span></h3>
+        <p>Your data stays on your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div>
+      <h2>App info</h2>
+      <dl class="spec">
+        <div><dt>Price</dt><dd>Free</dd></div>
+        <div><dt>Ads</dt><dd>None</dd></div>
+        <div><dt>In-app purchases</dt><dd>None</dd></div>
+        <div><dt>Platforms</dt><dd>iPhone / Android</dd></div>
+        <div><dt>Data</dt><dd>Stored on your device</dd></div>
+        <div><dt>Languages</dt><dd>English / 日本語</dd></div>
+        <div><dt>Age rating</dt><dd>4+</dd></div>
+      </dl>
+    </div>
+    
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="brand"><img src="/assets/apps/repistry/icon.png" alt=""><span class="name">Repistry</span></div>
+    <p class="catch">Your workouts,<br>simply logged.</p>
+    <div class="stores"><a href="https://apps.apple.com/app/id6806288076"><img class="apple" src="/assets/badge/appstore-en.svg" alt="Download on the App Store"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry&amp;hl=en"><img class="google" src="/assets/badge/googleplay-en.png" alt="Get it on Google Play"></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="/">All apps</a>　<a href="/repistry-privacy/">Privacy Policy</a></p>
     <p>Contact　<a href="mailto:neverknowsbestapps@gmail.com">neverknowsbestapps@gmail.com</a></p>
     <p>© neverknowsbestapps</p>
-  </footer>
+  </div>
+</footer>
 
-</div>
 </body>
 </html>

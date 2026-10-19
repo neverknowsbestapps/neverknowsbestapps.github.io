@@ -1,0 +1,32 @@
+{
+  "slug": "repistry",
+  "lang": "en",
+  "name": "Repistry",
+  "title": "Repistry | Log your workout weight and reps fast",
+  "description": "A simple workout log: pick an exercise, enter weight and reps. See your previous sets while you log, and track personal bests and progress per exercise.",
+  "category": "HealthApplication",
+  "colors": { "bg": "#e04e04", "bg2": "#c04403", "name": "#ffffff", "tag": "#fff1e6", "em": "#ffffff", "mark": "#ffd0b3", "accent": "#c04403" },
+  "icon": "icon.png",
+  "catch": "Your workouts,\nsimply logged.",
+  "stores": {
+    "apple": "https://apps.apple.com/app/id6806288076",
+    "google": "https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry&hl=en"
+  },
+  "hero": { "src": "en-record.jpg", "alt": "Logging a set" },
+  "features": [
+    { "src": "en-home.jpg", "title": "Training days,\n[color-coded] by muscle", "text": "See at a glance when you trained and what." },
+    { "src": "en-history.jpg", "title": "Fix any past set,\n[any time]", "text": "Edit earlier sets from the history." },
+    { "src": "en-analysis.jpg", "title": "See your [progress]\nby exercise", "text": "Check sessions, sets, total volume, and progress per exercise." },
+    { "src": "en-settings.jpg", "title": "No account needed.\n[Works offline.]", "text": "Your data stays on your device." }
+  ],
+  "info": [
+    ["Price", "Free"],
+    ["Ads", "None"],
+    ["In-app purchases", "None"],
+    ["Platforms", "iPhone / Android"],
+    ["Data", "Stored on your device"],
+    ["Languages", "English / 日本語"],
+    ["Age rating", "4+"]
+  ],
+  "privacy": "/repistry-privacy/"
+}

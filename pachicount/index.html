@@ -1,71 +1,110 @@
 <!DOCTYPE html>
+<!-- tools/build.mjs が apps/*.json から作るファイル。直接直さない -->
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>パチカウント | neverknowsbestapps</title>
-<meta name="description" content="パチンコの回転数を記録して、回転率を自動で計算するアプリ。">
-<link rel="stylesheet" href="../assets/style.css">
+<title>パチカウント｜パチンコの回転数を記録して回転率を自動計算</title>
+<meta name="description" content="パチンコの回転数と使った玉を、打ちながらその場で記録。基準の玉数あたりの回転率を自動で計算します。">
+<link rel="canonical" href="https://neverknowsbestapps.github.io/pachicount/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="パチカウント｜パチンコの回転数を記録して回転率を自動計算">
+<meta property="og:description" content="パチンコの回転数と使った玉を、打ちながらその場で記録。基準の玉数あたりの回転率を自動で計算します。">
+<meta property="og:url" content="https://neverknowsbestapps.github.io/pachicount/">
+<meta property="og:image" content="https://neverknowsbestapps.github.io/assets/apps/pachicount/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"パチカウント","description":"パチンコの回転数と使った玉を、打ちながらその場で記録。基準の玉数あたりの回転率を自動で計算します。","url":"https://neverknowsbestapps.github.io/pachicount/","operatingSystem":"iOS, Android","applicationCategory":"UtilitiesApplication","image":"https://neverknowsbestapps.github.io/assets/apps/pachicount/icon.png","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Person","name":"neverknowsbestapps"}}</script>
 </head>
-<body>
-<div class="wrap">
+<body class="app-page" style="--bg:#13203b;--bg2:#1d2d52;--name:#ffffff;--tag:#ffffff;--em:#ffd23f;--mark:#ffd23f;--accent:#1a3a8a">
 
-  <nav class="crumb"><a href="../">neverknowsbestapps</a></nav>
-
-  <header class="hero">
-    <img class="icon" src="../assets/img/pachicount-icon.png" alt="">
-    <h1>パチカウント</h1>
-    <p class="tagline">パチンコの回転数を記録して、回転率を自動で計算する。</p>
-    <div class="stores">
-      <a class="store" href="https://apps.apple.com/jp/app/id6799788161"><img class="apple" src="../assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a>
-      <a class="store" href="https://play.google.com/store/apps/details?id=com.neverknowsbestapps.pachicount"><img class="google" src="../assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a>
+<header class="hero">
+  <div class="wrap">
+    <nav class="top-nav"><a href="/">neverknowsbestapps</a></nav>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="brand"><img src="/assets/apps/pachicount/icon.png" alt=""><span class="name">パチカウント</span></div>
+        <div class="rule"></div>
+        <h1 class="catch">回転数を記録して<br><span class="em">回転率</span>を<span class="em">自動計算</span></h1>
+        <div class="stores"><a href="https://apps.apple.com/jp/app/id6799788161"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=com.neverknowsbestapps.pachicount"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+      </div>
+      <div class="hero-phone phone"><img src="/assets/apps/pachicount/playing.jpg" alt="遊技中の画面"></div>
     </div>
-  </header>
-
-  <div class="rail">
-    <figure><img src="../assets/img/pachicount-1.png" alt=""><figcaption>遊技中</figcaption></figure>
-    <figure><img src="../assets/img/pachicount-2.png" alt=""><figcaption>記録の一覧</figcaption></figure>
-    <figure><img src="../assets/img/pachicount-3.png" alt=""><figcaption>記録の詳細</figcaption></figure>
-    <figure><img src="../assets/img/pachicount-4.png" alt=""><figcaption>設定</figcaption></figure>
   </div>
+</header>
 
-  <h2>できること</h2>
-  <ul class="feat">
-    <li>回転数と使用玉数を、遊技しながらその場で記録する</li>
-    <li>基準玉数あたりの回転率を自動で計算する（250玉などに変えられる）</li>
-    <li>大当たりで台の回転数が戻っても、累積したまま記録を続ける</li>
-    <li>記録の一覧・詳細・編集・削除・共有</li>
-    <li>ボタンの数値を自分で決める</li>
-    <li>遊技の途中でアプリが終了しても、次に開いたときに続きから再開する</li>
-    <li>ライト／ダーク表示の切り替え</li>
-    <li>すべての記録の書き出しと取り込み</li>
-  </ul>
 
-  <h2>アプリの情報</h2>
-  <dl class="spec">
-    <div class="row"><dt>価格</dt><dd>無料</dd></div>
-    <div class="row"><dt>広告</dt><dd>あり</dd></div>
-    <div class="row"><dt>アプリ内課金</dt><dd>なし</dd></div>
-    <div class="row"><dt>対応</dt><dd>iPhone / Android</dd></div>
-    <div class="row"><dt>対象年齢</dt><dd>18歳以上</dd></div>
-    <div class="row"><dt>記録の保存先</dt><dd>端末の中だけ</dd></div>
-    <div class="row"><dt>最新版</dt><dd>1.3.1</dd></div>
-  </dl>
 
-  <h2>更新履歴</h2>
-  <ul class="log">
-    <li><span class="ver">1.3.1</span>遊技の途中で終了しても続きから再開できるようにし、記録の書き出しと取り込みを追加しました<span class="date">2026-10-01</span></li>
-    <li><span class="ver">1.3.0</span>デザインを新しくし、ダーク表示に対応しました<span class="date">2026-09-28</span></li>
-    <li><span class="ver">1.2.0</span>画面のデザインを新しくしました<span class="date">2026-08-23</span></li>
-    <li><span class="ver">1.0.0</span>公開しました<span class="date">2026-08-01</span></li>
-  </ul>
+<section class="feats">
+  <div class="wrap">
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachicount/detail.jpg" alt="回転率を 自動計算" loading="lazy"></div>
+      <div class="feat-text">
+        <h3><span class="mark">回転率</span>を<br>自動計算</h3>
+        <p>基準の玉数あたりの回転率を自動で計算します。基準は250玉などに変えられます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachicount/home.jpg" alt="記録は一覧で 管理・共有" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>記録は<span class="mark">一覧</span>で<br>管理・共有</h3>
+        <p>記録の一覧・詳細・編集・削除・共有。すべての記録の書き出しと取り込みもできます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachicount/settings.jpg" alt="ボタンの数値は 自由に設定" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>ボタンの数値は<br><span class="mark">自由に設定</span></h3>
+        <p>ボタンの数値を自分で決められます。ライト／ダーク表示にも対応しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer class="foot">
-    <p><a href="../pachicount-privacy/">プライバシーポリシー</a></p>
+<section class="info">
+  <div class="wrap info-grid">
+    <div>
+      <h2>アプリの情報</h2>
+      <dl class="spec">
+        <div><dt>価格</dt><dd>無料</dd></div>
+        <div><dt>広告</dt><dd>あり</dd></div>
+        <div><dt>アプリ内課金</dt><dd>なし</dd></div>
+        <div><dt>対応</dt><dd>iPhone / Android</dd></div>
+        <div><dt>記録の保存先</dt><dd>端末の中だけ</dd></div>
+        <div><dt>対象年齢</dt><dd>18歳以上</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2>更新履歴</h2>
+      <ul class="log">
+        <li><span class="ver">1.3.2</span>遊技の開始から記録までの手順を減らし、画面の下にタブを付けました<span class="date">2026-10-19</span></li>
+        <li><span class="ver">1.3.1</span>遊技の途中で終了しても続きから再開できるようにし、記録の書き出しと取り込みを追加しました<span class="date">2026-10-01</span></li>
+        <li><span class="ver">1.3.0</span>デザインを新しくし、ダーク表示に対応しました<span class="date">2026-09-28</span></li>
+        <li><span class="ver">1.0.0</span>公開しました<span class="date">2026-08-01</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="brand"><img src="/assets/apps/pachicount/icon.png" alt=""><span class="name">パチカウント</span></div>
+    <p class="catch">回転数を記録して<br><span class="em">回転率</span>を<span class="em">自動計算</span></p>
+    <div class="stores"><a href="https://apps.apple.com/jp/app/id6799788161"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=com.neverknowsbestapps.pachicount"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="/">アプリ一覧</a>　<a href="/pachicount-privacy/">プライバシーポリシー</a></p>
     <p>お問い合わせ　<a href="mailto:neverknowsbestapps@gmail.com">neverknowsbestapps@gmail.com</a></p>
     <p>© neverknowsbestapps</p>
-  </footer>
+  </div>
+</footer>
 
-</div>
 </body>
 </html>

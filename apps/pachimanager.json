@@ -1,0 +1,45 @@
+{
+  "slug": "pachimanager",
+  "order": 1,
+  "name": "パチマネージャー",
+  "title": "パチマネージャー｜パチンコ・パチスロの収支管理と診断アプリ",
+  "description": "パチンコ・パチスロ（スロット）の収支を記録して、勝率や機種別・ホール別の成績を分析。記録がたまると、打ち方を16種の動物で診断します。",
+  "category": "FinanceApplication",
+  "lead": "パチンコ・パチスロの収支記録と、打ち方の診断",
+  "summary": "投資と回収を入れるだけで、勝率や機種別・ホール別の成績を集計。記録がたまると、打ち方を16種の動物で診断します。",
+  "tags": ["iPhone", "Android", "無料"],
+  "colors": { "bg": "#111a2e", "bg2": "#1b2a47", "name": "#ffffff", "tag": "#ffffff", "em": "#ffd23f", "mark": "#ffd23f", "accent": "#1b2a47" },
+  "icon": "icon.png",
+  "ogImage": "og.jpg",
+  "catch": "サクッと[記録]\nじっくり[分析]\nズバッと[診断]",
+  "stores": {
+    "apple": "https://apps.apple.com/jp/app/id6799350017",
+    "google": "https://play.google.com/store/apps/details?id=neverknowsbestapps.pachimanager"
+  },
+  "hero": { "src": "diagnosis.jpg", "alt": "診断の結果の画面" },
+  "band": {
+    "title": "あなたの打ち方は、\n16種のどの動物？",
+    "text": "収支・勝率・回収率・最高勝ちの4つで、点数とランクも付きます。",
+    "images": ["animals/wolf.jpg", "animals/lion.jpg", "animals/fox.jpg", "animals/cat.jpg", "animals/shark.jpg", "animals/crocodile.jpg", "animals/raccoon.jpg", "animals/frog.jpg", "animals/elephant.jpg", "animals/bear.jpg", "animals/squirrel.jpg", "animals/hamster.jpg", "animals/boar.jpg", "animals/rhino.jpg", "animals/goat.jpg", "animals/sheep.jpg"]
+  },
+  "features": [
+    { "src": "home.jpg", "title": "勝ち負けが\n[カレンダー]に並ぶ", "text": "打った日ごとの収支と、月の合計がひと目で分かります。" },
+    { "src": "analysis.jpg", "title": "機種別・ホール別に\n[勝率]が出る", "text": "期間・ホール・機種で絞り込んで、成績を振り返れます。" },
+    { "src": "record.jpg", "title": "投資と回収を\n[入れるだけ]", "text": "収支は自動で計算。入力する項目やテンキーの並びも自分好みに変えられます。" },
+    { "src": "csv.jpg", "title": "今までの記録を\n[そのまま取り込む]", "text": "他のアプリの CSV を取り込めば、その日のうちに診断できます。" }
+  ],
+  "info": [
+    ["価格", "無料"],
+    ["広告", "あり（500円で非表示）"],
+    ["対応", "iPhone / Android"],
+    ["アカウント登録", "不要"],
+    ["記録の保存先", "端末の中だけ"],
+    ["対象年齢", "18歳以上"]
+  ],
+  "log": [
+    { "ver": "1.0.4", "text": "不具合を直し、テーマの変更がすぐ反映されるようになりました", "date": "2026-10-03" },
+    { "ver": "1.0.2", "text": "記録の保存とバックアップの復元を、より安全にしました", "date": "2026-09-03" },
+    { "ver": "1.0.0", "text": "公開しました", "date": "2026-08-27" }
+  ],
+  "privacy": "/pachimanager-privacy/"
+}

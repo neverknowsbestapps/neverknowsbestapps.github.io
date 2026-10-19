@@ -1,64 +1,111 @@
 <!DOCTYPE html>
+<!-- tools/build.mjs が apps/*.json から作るファイル。直接直さない -->
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repistry | neverknowsbestapps</title>
-<link rel="stylesheet" href="../assets/style.css">
+<title>Repistry｜筋トレの重さと回数をすばやく記録するアプリ</title>
+<meta name="description" content="種目を選んで重さと回数を入れるだけの筋トレ記録アプリ。前回のセットを見ながら記録して、自己ベストや種目ごとの推移を見返せます。">
+<link rel="canonical" href="https://neverknowsbestapps.github.io/repistry/">
+<link rel="alternate" hreflang="en" href="https://neverknowsbestapps.github.io/repistry/en/">
+<link rel="alternate" hreflang="ja" href="https://neverknowsbestapps.github.io/repistry/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Repistry｜筋トレの重さと回数をすばやく記録するアプリ">
+<meta property="og:description" content="種目を選んで重さと回数を入れるだけの筋トレ記録アプリ。前回のセットを見ながら記録して、自己ベストや種目ごとの推移を見返せます。">
+<meta property="og:url" content="https://neverknowsbestapps.github.io/repistry/">
+<meta property="og:image" content="https://neverknowsbestapps.github.io/assets/apps/repistry/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Repistry","description":"種目を選んで重さと回数を入れるだけの筋トレ記録アプリ。前回のセットを見ながら記録して、自己ベストや種目ごとの推移を見返せます。","url":"https://neverknowsbestapps.github.io/repistry/","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","image":"https://neverknowsbestapps.github.io/assets/apps/repistry/icon.png","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Person","name":"neverknowsbestapps"}}</script>
 </head>
-<body>
-<div class="wrap">
+<body class="app-page" style="--bg:#e04e04;--bg2:#c04403;--name:#ffffff;--tag:#fff1e6;--em:#ffffff;--mark:#ffd0b3;--accent:#c04403">
 
-  <nav class="crumb">
-    <a href="../">neverknowsbestapps</a>
-    <a class="lang" href="en/">English</a>
-  </nav>
-
-  <header class="hero">
-    <img class="icon" src="../assets/img/repistry-icon.png" alt="">
-    <h1>Repistry</h1>
-    <p class="tagline">筋トレの重さと回数をすばやく記録する。</p>
-    <div class="stores">
-      <a class="store" href="https://apps.apple.com/jp/app/id6806288076"><img class="apple" src="../assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a>
-      <a class="store" href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"><img class="google" src="../assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a>
+<header class="hero">
+  <div class="wrap">
+    <nav class="top-nav"><a href="/">neverknowsbestapps</a><a class="lang" href="/repistry/en/">English</a></nav>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="brand"><img src="/assets/apps/repistry/icon.png" alt=""><span class="name">Repistry</span></div>
+        <div class="rule"></div>
+        <h1 class="catch">筋トレ記録を、<br>シンプルに。</h1>
+        <div class="stores"><a href="https://apps.apple.com/jp/app/id6806288076"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+      </div>
+      <div class="hero-phone phone"><img src="/assets/apps/repistry/ja-record.jpg" alt="記録の画面"></div>
     </div>
-  </header>
-
-  <div class="rail">
-    <figure><img src="../assets/img/repistry-ja-1.png" alt=""><figcaption>記録する</figcaption></figure>
-    <figure><img src="../assets/img/repistry-ja-2.png" alt=""><figcaption>ホーム</figcaption></figure>
-    <figure><img src="../assets/img/repistry-ja-3.png" alt=""><figcaption>履歴</figcaption></figure>
-    <figure><img src="../assets/img/repistry-ja-4.png" alt=""><figcaption>分析</figcaption></figure>
   </div>
+</header>
 
-  <h2>できること</h2>
-  <ul class="feat">
-    <li>種目を選び、重さと回数を入れて記録する</li>
-    <li>前回のセットを見ながら、今回の重さと回数を決める</li>
-    <li>自己ベストを更新すると印が付く</li>
-    <li>種目ごとに休憩の長さを決めて、タイマーではかる</li>
-    <li>カレンダーと履歴で見返し、あとから直す</li>
-    <li>記録回数・セット数・総重量と、種目ごとの推移を見る</li>
-  </ul>
 
-  <h2>アプリの情報</h2>
-  <dl class="spec">
-    <div class="row"><dt>価格</dt><dd>無料</dd></div>
-    <div class="row"><dt>広告</dt><dd>なし</dd></div>
-    <div class="row"><dt>アプリ内課金</dt><dd>なし</dd></div>
-    <div class="row"><dt>対応</dt><dd>iPhone / Android</dd></div>
-    <div class="row"><dt>対象年齢</dt><dd>4+</dd></div>
-    <div class="row"><dt>記録の保存先</dt><dd>端末の中だけ</dd></div>
-    <div class="row"><dt>表示言語</dt><dd>日本語 / English</dd></div>
-    <div class="row"><dt>最新版</dt><dd>1.0.0</dd></div>
-  </dl>
 
-  <footer class="foot">
-    <p><a href="../repistry-privacy/">プライバシーポリシー</a></p>
+<section class="feats">
+  <div class="wrap">
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/ja-home.jpg" alt="やった日が 部位の色で並ぶ" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>やった日が<br><span class="mark">部位の色</span>で並ぶ</h3>
+        <p>カレンダーで、いつどこを鍛えたかがひと目で分かります。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/ja-history.jpg" alt="過去の記録は いつでも直せる" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>過去の記録は<br><span class="mark">いつでも直せる</span></h3>
+        <p>履歴から、前のセットをあとから直せます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/ja-analysis.jpg" alt="種目ごとの伸びを グラフで見る" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>種目ごとの伸びを<br><span class="mark">グラフ</span>で見る</h3>
+        <p>記録回数・セット数・総重量と、種目ごとの推移を見られます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/repistry/ja-settings.jpg" alt="登録なし オフラインで動く" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>登録なし<br><span class="mark">オフライン</span>で動く</h3>
+        <p>アカウントは要りません。記録は端末の中だけに保存します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div>
+      <h2>アプリの情報</h2>
+      <dl class="spec">
+        <div><dt>価格</dt><dd>無料</dd></div>
+        <div><dt>広告</dt><dd>なし</dd></div>
+        <div><dt>アプリ内課金</dt><dd>なし</dd></div>
+        <div><dt>対応</dt><dd>iPhone / Android</dd></div>
+        <div><dt>記録の保存先</dt><dd>端末の中だけ</dd></div>
+        <div><dt>表示言語</dt><dd>日本語 / English</dd></div>
+        <div><dt>対象年齢</dt><dd>4+</dd></div>
+      </dl>
+    </div>
+    
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="brand"><img src="/assets/apps/repistry/icon.png" alt=""><span class="name">Repistry</span></div>
+    <p class="catch">筋トレ記録を、<br>シンプルに。</p>
+    <div class="stores"><a href="https://apps.apple.com/jp/app/id6806288076"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="/">アプリ一覧</a>　<a href="/repistry-privacy/">プライバシーポリシー</a></p>
     <p>お問い合わせ　<a href="mailto:neverknowsbestapps@gmail.com">neverknowsbestapps@gmail.com</a></p>
     <p>© neverknowsbestapps</p>
-  </footer>
+  </div>
+</footer>
 
-</div>
 </body>
 </html>

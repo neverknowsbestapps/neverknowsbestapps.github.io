@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- tools/build.mjs が apps/*.json から作るファイル。直接直さない -->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>パチマネージャー｜パチンコ・パチスロの収支管理と診断アプリ</title>
+<meta name="description" content="パチンコ・パチスロ（スロット）の収支を記録して、勝率や機種別・ホール別の成績を分析。記録がたまると、打ち方を16種の動物で診断します。">
+<link rel="canonical" href="https://neverknowsbestapps.github.io/pachimanager/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="パチマネージャー｜パチンコ・パチスロの収支管理と診断アプリ">
+<meta property="og:description" content="パチンコ・パチスロ（スロット）の収支を記録して、勝率や機種別・ホール別の成績を分析。記録がたまると、打ち方を16種の動物で診断します。">
+<meta property="og:url" content="https://neverknowsbestapps.github.io/pachimanager/">
+<meta property="og:image" content="https://neverknowsbestapps.github.io/assets/apps/pachimanager/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"パチマネージャー","description":"パチンコ・パチスロ（スロット）の収支を記録して、勝率や機種別・ホール別の成績を分析。記録がたまると、打ち方を16種の動物で診断します。","url":"https://neverknowsbestapps.github.io/pachimanager/","operatingSystem":"iOS, Android","applicationCategory":"FinanceApplication","image":"https://neverknowsbestapps.github.io/assets/apps/pachimanager/icon.png","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Person","name":"neverknowsbestapps"}}</script>
+</head>
+<body class="app-page" style="--bg:#111a2e;--bg2:#1b2a47;--name:#ffffff;--tag:#ffffff;--em:#ffd23f;--mark:#ffd23f;--accent:#1b2a47">
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="top-nav"><a href="/">neverknowsbestapps</a></nav>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="brand"><img src="/assets/apps/pachimanager/icon.png" alt=""><span class="name">パチマネージャー</span></div>
+        <div class="rule"></div>
+        <h1 class="catch">サクッと<span class="em">記録</span><br>じっくり<span class="em">分析</span><br>ズバッと<span class="em">診断</span></h1>
+        <div class="stores"><a href="https://apps.apple.com/jp/app/id6799350017"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.pachimanager"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+      </div>
+      <div class="hero-phone phone"><img src="/assets/apps/pachimanager/diagnosis.jpg" alt="診断の結果の画面"></div>
+    </div>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h2>あなたの打ち方は、<br>16種のどの動物？</h2>
+    <p>収支・勝率・回収率・最高勝ちの4つで、点数とランクも付きます。</p>
+    <div class="band-grid"><img src="/assets/apps/pachimanager/animals/wolf.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/lion.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/fox.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/cat.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/shark.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/crocodile.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/raccoon.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/frog.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/elephant.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/bear.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/squirrel.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/hamster.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/boar.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/rhino.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/goat.jpg" alt="" loading="lazy"><img src="/assets/apps/pachimanager/animals/sheep.jpg" alt="" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feats">
+  <div class="wrap">
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachimanager/home.jpg" alt="勝ち負けが カレンダーに並ぶ" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>勝ち負けが<br><span class="mark">カレンダー</span>に並ぶ</h3>
+        <p>打った日ごとの収支と、月の合計がひと目で分かります。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachimanager/analysis.jpg" alt="機種別・ホール別に 勝率が出る" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>機種別・ホール別に<br><span class="mark">勝率</span>が出る</h3>
+        <p>期間・ホール・機種で絞り込んで、成績を振り返れます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachimanager/record.jpg" alt="投資と回収を 入れるだけ" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>投資と回収を<br><span class="mark">入れるだけ</span></h3>
+        <p>収支は自動で計算。入力する項目やテンキーの並びも自分好みに変えられます。</p>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-img phone"><img src="/assets/apps/pachimanager/csv.jpg" alt="今までの記録を そのまま取り込む" loading="lazy"></div>
+      <div class="feat-text">
+        <h3>今までの記録を<br><span class="mark">そのまま取り込む</span></h3>
+        <p>他のアプリの CSV を取り込めば、その日のうちに診断できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div>
+      <h2>アプリの情報</h2>
+      <dl class="spec">
+        <div><dt>価格</dt><dd>無料</dd></div>
+        <div><dt>広告</dt><dd>あり（500円で非表示）</dd></div>
+        <div><dt>対応</dt><dd>iPhone / Android</dd></div>
+        <div><dt>アカウント登録</dt><dd>不要</dd></div>
+        <div><dt>記録の保存先</dt><dd>端末の中だけ</dd></div>
+        <div><dt>対象年齢</dt><dd>18歳以上</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2>更新履歴</h2>
+      <ul class="log">
+        <li><span class="ver">1.0.4</span>不具合を直し、テーマの変更がすぐ反映されるようになりました<span class="date">2026-10-03</span></li>
+        <li><span class="ver">1.0.2</span>記録の保存とバックアップの復元を、より安全にしました<span class="date">2026-09-03</span></li>
+        <li><span class="ver">1.0.0</span>公開しました<span class="date">2026-08-27</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="brand"><img src="/assets/apps/pachimanager/icon.png" alt=""><span class="name">パチマネージャー</span></div>
+    <p class="catch">サクッと<span class="em">記録</span><br>じっくり<span class="em">分析</span><br>ズバッと<span class="em">診断</span></p>
+    <div class="stores"><a href="https://apps.apple.com/jp/app/id6799350017"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.pachimanager"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="/">アプリ一覧</a>　<a href="/pachimanager-privacy/">プライバシーポリシー</a></p>
+    <p>お問い合わせ　<a href="mailto:neverknowsbestapps@gmail.com">neverknowsbestapps@gmail.com</a></p>
+    <p>© neverknowsbestapps</p>
+  </div>
+</footer>
+
+</body>
+</html>

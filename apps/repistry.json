@@ -1,0 +1,35 @@
+{
+  "slug": "repistry",
+  "order": 3,
+  "name": "Repistry",
+  "title": "Repistry｜筋トレの重さと回数をすばやく記録するアプリ",
+  "description": "種目を選んで重さと回数を入れるだけの筋トレ記録アプリ。前回のセットを見ながら記録して、自己ベストや種目ごとの推移を見返せます。",
+  "category": "HealthApplication",
+  "lead": "筋トレの重さと回数を、すばやく記録",
+  "summary": "前回のセットを見ながら記録して、自己ベストの更新や種目ごとの推移を見返せます。休憩タイマー付き。",
+  "tags": ["iPhone", "Android", "無料", "日本語 / English"],
+  "colors": { "bg": "#e04e04", "bg2": "#c04403", "name": "#ffffff", "tag": "#fff1e6", "em": "#ffffff", "mark": "#ffd0b3", "accent": "#c04403" },
+  "icon": "icon.png",
+  "catch": "筋トレ記録を、\nシンプルに。",
+  "stores": {
+    "apple": "https://apps.apple.com/jp/app/id6806288076",
+    "google": "https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"
+  },
+  "hero": { "src": "ja-record.jpg", "alt": "記録の画面" },
+  "features": [
+    { "src": "ja-home.jpg", "title": "やった日が\n[部位の色]で並ぶ", "text": "カレンダーで、いつどこを鍛えたかがひと目で分かります。" },
+    { "src": "ja-history.jpg", "title": "過去の記録は\n[いつでも直せる]", "text": "履歴から、前のセットをあとから直せます。" },
+    { "src": "ja-analysis.jpg", "title": "種目ごとの伸びを\n[グラフ]で見る", "text": "記録回数・セット数・総重量と、種目ごとの推移を見られます。" },
+    { "src": "ja-settings.jpg", "title": "登録なし\n[オフライン]で動く", "text": "アカウントは要りません。記録は端末の中だけに保存します。" }
+  ],
+  "info": [
+    ["価格", "無料"],
+    ["広告", "なし"],
+    ["アプリ内課金", "なし"],
+    ["対応", "iPhone / Android"],
+    ["記録の保存先", "端末の中だけ"],
+    ["表示言語", "日本語 / English"],
+    ["対象年齢", "4+"]
+  ],
+  "privacy": "/repistry-privacy/"
+}

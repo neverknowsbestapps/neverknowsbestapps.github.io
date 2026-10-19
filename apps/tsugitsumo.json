@@ -1,0 +1,32 @@
+{
+  "slug": "tsugitsumo",
+  "order": 4,
+  "name": "ツギツモ",
+  "title": "ツギツモ｜次の7牌が見える、100秒の一人麻雀",
+  "description": "次の7牌が見える「NEXT」を読み、速い和了でスコアを伸ばす一人用の麻雀スコアアタック。100秒から始まり、和了するたびに時間をつなぎます。",
+  "category": "GameApplication",
+  "lead": "次の7牌が見える、1人用の麻雀",
+  "tags": ["iPhone", "Android", "無料", "ゲーム"],
+  "listBanner": "game.jpg",
+  "colors": { "bg": "#264a64", "bg2": "#1e3b50", "name": "#f3ead8", "tag": "#f3ead8", "em": "#e8c35a", "mark": "#e8c35a", "accent": "#264a64" },
+  "icon": "icon.png",
+  "catch": "次の[7牌]が見える\n1人用麻雀",
+  "stores": {
+    "apple": "https://apps.apple.com/jp/app/id6806139749",
+    "google": "https://play.google.com/store/apps/details?id=neverknowsbestapps.tsugitsumo"
+  },
+  "hero": { "src": "game.jpg", "alt": "遊んでいる画面" },
+  "features": [
+    { "src": "win.jpg", "title": "速く和了るほど\n[スコア]が伸びる", "text": "手牌の点数に、残りツモ数と和了までの速さで決まる倍率をかけます。" },
+    { "src": "home.jpg", "title": "和了で時間をつなぐ\n[100秒]の一人麻雀", "text": "100秒から始まり、和了するたびに7秒をつなぎます。" }
+  ],
+  "info": [
+    ["価格", "無料"],
+    ["広告", "なし"],
+    ["アプリ内課金", "なし"],
+    ["対応", "iPhone / Android"],
+    ["画面", "横画面専用"],
+    ["記録の保存先", "端末の中だけ"]
+  ],
+  "privacy": "/tsugitsumo-privacy/"
+}

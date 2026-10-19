@@ -1,49 +1,97 @@
 <!DOCTYPE html>
+<!-- tools/build.mjs が apps/*.json から作るファイル。直接直さない -->
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>neverknowsbestapps</title>
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="個人で作っているスマホアプリの一覧。パチマネージャー、パチカウント、Repistry、ツギツモ。">
+<link rel="canonical" href="https://neverknowsbestapps.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="neverknowsbestapps">
+<meta property="og:description" content="個人で作っているスマホアプリの一覧。パチマネージャー、パチカウント、Repistry、ツギツモ。">
+<meta property="og:url" content="https://neverknowsbestapps.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-<div class="wrap">
+<body class="list-page">
 
-  <header class="site-head">
-    <h1>neverknowsbestapps</h1>
-    <p>個人でモバイルアプリを作っています。</p>
-  </header>
+<header class="wrap site-head">
+  <h1>neverknowsbestapps</h1>
+  <p>個人でスマホアプリを作っています。</p>
+</header>
 
-  <ul class="apps">
-    <li>
-      <a class="app-card" href="pachicount/">
-        <img src="assets/img/pachicount-icon.png" alt="">
-        <span>
-          <span class="name">パチカウント</span>
-          <span class="desc">パチンコの回転数を記録して、回転率を自動で計算する</span>
-          <span class="os">iPhone / Android</span>
-        </span>
-        <span class="chev">›</span>
-      </a>
-    </li>
-    <li>
-      <a class="app-card" href="repistry/">
-        <img src="assets/img/repistry-icon.png" alt="">
-        <span>
-          <span class="name">Repistry</span>
-          <span class="desc">筋トレの重さと回数をすばやく記録する</span>
-          <span class="os">iPhone / Android</span>
-        </span>
-        <span class="chev">›</span>
-      </a>
-    </li>
-  </ul>
+<main class="wrap">
 
-  <footer class="foot">
+  <section class="app" style="--accent:#1b2a47">
+    <img class="icon" src="/assets/apps/pachimanager/icon.png" alt="">
+    <div class="head">
+      <h2><a href="/pachimanager/">パチマネージャー</a></h2>
+      <p class="lead">パチンコ・パチスロの収支記録と、打ち方の診断</p>
+    </div>
+    <div class="body">
+      <ul class="tags"><li>iPhone</li><li>Android</li><li>無料</li></ul>
+      
+      <p class="desc">投資と回収を入れるだけで、勝率や機種別・ホール別の成績を集計。記録がたまると、打ち方を16種の動物で診断します。</p>
+      <div class="actions"><div class="stores"><a href="https://apps.apple.com/jp/app/id6799350017"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.pachimanager"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div><a class="more" href="/pachimanager/">詳しく見る ›</a></div>
+    </div>
+  </section>
+
+  <section class="app" style="--accent:#1a3a8a">
+    <img class="icon" src="/assets/apps/pachicount/icon.png" alt="">
+    <div class="head">
+      <h2><a href="/pachicount/">パチカウント</a></h2>
+      <p class="lead">パチンコの回転率を、打ちながら自動計算</p>
+    </div>
+    <div class="body">
+      <ul class="tags"><li>iPhone</li><li>Android</li><li>無料</li></ul>
+      
+      <p class="desc">回転数と使った玉をその場で記録するだけで、基準の玉数あたりの回転率を計算します。</p>
+      <div class="actions"><div class="stores"><a href="https://apps.apple.com/jp/app/id6799788161"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=com.neverknowsbestapps.pachicount"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div><a class="more" href="/pachicount/">詳しく見る ›</a></div>
+    </div>
+  </section>
+
+  <section class="app" style="--accent:#c04403">
+    <img class="icon" src="/assets/apps/repistry/icon.png" alt="">
+    <div class="head">
+      <h2><a href="/repistry/">Repistry</a></h2>
+      <p class="lead">筋トレの重さと回数を、すばやく記録</p>
+    </div>
+    <div class="body">
+      <ul class="tags"><li>iPhone</li><li>Android</li><li>無料</li><li>日本語 / English</li></ul>
+      
+      <p class="desc">前回のセットを見ながら記録して、自己ベストの更新や種目ごとの推移を見返せます。休憩タイマー付き。</p>
+      <div class="actions"><div class="stores"><a href="https://apps.apple.com/jp/app/id6806288076"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.repistry"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div><a class="more" href="/repistry/">詳しく見る ›</a></div>
+    </div>
+  </section>
+
+  <section class="app" style="--accent:#264a64">
+    <img class="icon" src="/assets/apps/tsugitsumo/icon.png" alt="">
+    <div class="head">
+      <h2><a href="/tsugitsumo/">ツギツモ</a></h2>
+      <p class="lead">次の7牌が見える、1人用の麻雀</p>
+    </div>
+    <div class="body">
+      <ul class="tags"><li>iPhone</li><li>Android</li><li>無料</li><li>ゲーム</li></ul>
+      <a class="banner" href="/tsugitsumo/"><img src="/assets/apps/tsugitsumo/game.jpg" alt="" loading="lazy"></a>
+      
+      <div class="actions"><div class="stores"><a href="https://apps.apple.com/jp/app/id6806139749"><img class="apple" src="/assets/badge/appstore-ja.svg" alt="App Store からダウンロード"></a><a href="https://play.google.com/store/apps/details?id=neverknowsbestapps.tsugitsumo"><img class="google" src="/assets/badge/googleplay-ja.png" alt="Google Play で手に入れよう"></a></div><a class="more" href="/tsugitsumo/">詳しく見る ›</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    
     <p>お問い合わせ　<a href="mailto:neverknowsbestapps@gmail.com">neverknowsbestapps@gmail.com</a></p>
     <p>© neverknowsbestapps</p>
-  </footer>
+  </div>
+</footer>
 
-</div>
 </body>
 </html>
