@@ -7,12 +7,13 @@
   "category": "LifestyleApplication",
   "lead": "継続がかたちになる習慣記録",
   "summary": "1日1回、習慣に印をつけるとビー玉がもらえます。ビー玉はその月の瓶にたまり、続くほど大きくなります。",
-  "tags": ["iPhone", "無料", "日本語 / English"],
+  "tags": ["iPhone", "Android", "無料", "日本語 / English"],
   "colors": { "bg": "#d6e4ef", "bg2": "#c4d6e5", "name": "#2f4a77", "tag": "#2f4a77", "em": "#b34d1a", "mark": "#f5c77e", "accent": "#2f4a77" },
   "icon": "icon.png",
   "catch": "続けた日が、\n[目に見える形]で残る。",
   "stores": {
-    "apple": "https://apps.apple.com/jp/app/id6821903124"
+    "apple": "https://apps.apple.com/jp/app/id6821903124",
+    "google": "https://play.google.com/store/apps/details?id=neverknowsbestapps.korotto"
   },
   "hero": { "src": "jar.jpg", "alt": "ビー玉がたまった瓶の画面" },
   "features": [
@@ -25,7 +26,7 @@
     ["価格", "無料"],
     ["広告", "あり"],
     ["アプリ内課金", "広告を消す買い切り 300円"],
-    ["対応", "iPhone"],
+    ["対応", "iPhone / Android"],
     ["記録の保存先", "端末の中だけ"],
     ["表示言語", "日本語 / English"],
     ["対象年齢", "4+"]
